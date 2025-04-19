@@ -1,4 +1,4 @@
-# TechnoHacks Solution  |  WeatherSphere - Interactive Weather Dashboard 🌦️
+# TechnoHacks Solution intern  |  WeatherSphere - Interactive Weather Dashboard 🌦️
 
 A sleek, real-time weather application built with HTML, CSS, and vanilla JavaScript. Features dynamic background changes based on weather conditions and comprehensive atmospheric data visualization.
 
