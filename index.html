@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Modern Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1>SkyCast</h1>
+                <div class="search-container">
+                    <input type="text" id="location-input" placeholder="Search location...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                    <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="weather-content">
+            <div class="current-weather">
+                <div class="weather-main">
+                    <div class="location-time">
+                        <h2 id="current-location">New York, NY</h2>
+                        <p id="current-date">Monday, June 12, 2023</p>
+                    </div>
+                    <div class="weather-icon" id="current-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="temperature">
+                        <span id="current-temp">72</span>
+                        <span class="temp-unit">°F</span>
+                    </div>
+                    <div class="conditions">
+                        <p id="current-condition">Sunny</p>
+                        <p>Feels like <span id="feels-like">74</span>°</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-stats">
+                <div class="stat-item">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <p>Wind</p>
+                        <p><span id="wind-speed">8</span> mph</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <p>Humidity</p>
+                        <p><span id="humidity">65</span>%</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-eye"></i>
+                    <div>
+                        <p>Visibility</p>
+                        <p><span id="visibility">10</span> mi</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-cloud-rain"></i>
+                    <div>
+                        <p>Precipitation</p>
+                        <p><span id="precipitation">0</span>%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-list" id="forecast-list">
+                    <!-- Forecast items will be added by JS -->
+                </div>
+            </div>
+        </main>
+
+        <div class="unit-toggle">
+            <button class="unit-btn active" data-unit="f">°F</button>
+            <button class="unit-btn" data-unit="c">°C</button>
+        </div>
+
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <i class="fas fa-sun"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
